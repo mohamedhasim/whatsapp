@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>K.MOHAMED HASIM DEVELOPER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script>
+    $(function() {
+        new ClipboardJS('.btn');
+    });
+</script>
+
+
+
+    <script>
+        function myWhatsapp(){
+          var whatsapp,whatsapp_number; 
+          whatsapp = Number(document.getElementById('whatsapp').value);
+          whatsapp_number = "https://wa.me/+91"+whatsapp;
+          document.getElementById('number').innerHTML=whatsapp_number;
+        }
+
+        function myWhatsapp1(){
+          var whatsapp,whatsapp_number; 
+          whatsapp = Number(document.getElementById('whatsapp').value);
+          whatsapp_number = "https://wa.me/+91"+whatsapp;
+          document.getElementById('number').innerHTML=whatsapp_number;
+          window.open(whatsapp_number);
+        }
+          </script>
+
+
+        </head>
+<body>
+ 
+<div class="container">
+    <BR>
+  <div class="card">
+    <div class="card-header bg-primary text-white">Convert Phone Number Into Whatsapp Link</div>
+    <div class="card-body">
+        
+        <form class="">
+            <input type="number" id="whatsapp" name="whatsapp">
+            <input type="button" value="Submit" onclick="myWhatsapp()">       
+         </form>
+         <br>
+         <a id="number" href="javascript:void(0);" onclick="myWhatsapp1()"></a>
+       <br>
+         <br>
+         <form id="form2" name="form2">
+            <a href="" id="number"></a>
+            <button type="button" class="btn btn-primary" data-clipboard-target="#number">COPY THE WHATSAPP LINK</button>
+        </form> 
+        <hr>
+        <div id="result" style="display:none;">
+            <p>Your Whatsapp Link :</p>
+            <p id="link"></p>
+        </div>
+    </div> 
+    <div class="card-footer">
+        <p>Name : K.Mohamed Hasim</p>
+
+        <p>My Website : <a href="https://ckwf0ayxficl48tffrnwzw-on.drv.tw/cutoff_calculator/K.MOHAMED%20HASIM/">Click Here</a></p>
+
+        <p>My Mobile Number : <a href="tel:+918524865763">8524865763</a></p>
+
+        <p>My Whatsapp : <a href="https://wa.me/+918524865763">8524865763</a></p>
+
+        <p>Email : <a href="mailto:hasimdeveloper@gmail.com">hasimdeveloper@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
